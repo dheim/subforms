@@ -21,7 +21,7 @@ export class AddressComponent implements OnInit {
       firstName: new FormControl<string>('', {nonNullable: true}),
       street: new FormControl<string>('', {nonNullable: true}),
       houseNumber: new FormControl<string>('', {nonNullable: true}),
-      postCode: new FormControl<number | undefined>(undefined),
+      postCode: new FormControl<number | undefined>(undefined, {nonNullable: true}),
       city: new FormControl<string>('', {nonNullable: true})
     });
   }

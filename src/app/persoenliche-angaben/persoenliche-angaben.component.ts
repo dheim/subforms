@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AbstractControl, FormGroup} from "@angular/forms";
+import {FormGroup} from "@angular/forms";
 import {AddressComponent} from "../address/address.component";
 import {AddressFormGroup} from "../address/address-form-group";
 
@@ -21,10 +21,7 @@ export class PersoenlicheAngabenComponent implements OnInit {
         console.log(this.form.value);
       }
     })
-
-    const address:FormGroup<AddressFormGroup> = this.form.controls['address'];
   }
-
 
 
   ngOnInit(): void {

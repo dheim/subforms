@@ -6,5 +6,5 @@ export interface AddressFormGroup {
   city: FormControl<string>;
   street: FormControl<string>;
   houseNumber: FormControl<string>;
-  postCode: FormControl<number | undefined | null>
+  postCode: FormControl<number | undefined>
 }
